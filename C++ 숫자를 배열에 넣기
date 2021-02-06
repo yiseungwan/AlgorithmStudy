@@ -1,0 +1,5 @@
+result = 53431412;
+a[length] = {};
+sprintf(a, "%d", result);
+...
+a[i]-'0'==j
