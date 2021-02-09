@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char s[101] = {};
+	cin >> s;
+	int count[26]={};
+	for(int i='a'; i<='z'; i++)
+	{
+		for(int j=0; j<100; j++)
+		{
+			if(s[j] == i){
+				count[i-97]=j+1;
+				break;
+			}
+		}
+	}
+	for(int i=0; i<26; i++)
+	{
+		cout << count[i]-1 << " ";
+	}
+}
